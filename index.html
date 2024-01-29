@@ -83,14 +83,6 @@
         .terminalBody {
             margin: 5px;
             text-shadow: 0px 0px 4px #09ff09;
-            /* text-shadow: 0px 0px 5px #09ff09;
-            text-shadow: 0px 0px 5px #09ff09;
-            text-shadow: 0px 0px 5px #09ff09;
-            text-shadow: 0px 0px 5px #09ff09;
-            text-shadow: 0px 0px 5px #09ff09;
-            text-shadow: 0px 0px 5px #09ff09;
-            text-shadow: 0px 0px 5px #09ff09;
-            text-shadow: 0px 0px 5px #09ff09; */
         }
     </style>
 </head>
@@ -100,7 +92,7 @@
     <div class="terminal">
         <div class="terminalHead">
             <span class="headInfo">Terminal</span>
-            <span class="closeTerminal"><div class="dot"></div></span>
+            <span class="closeTerminal"><div class="dot" id="close"></div></span>
         </div>
         <div class="terminalBody">
             <div id="Terminal">
@@ -150,6 +142,9 @@
         clearInterval(interval);
     }
     main()
+    document.querySelector('#close').addEventListener("click",()=>{
+        alert("YOU ARE STUCK!!!!!!")
+    })
 </script>
 
 </html>
